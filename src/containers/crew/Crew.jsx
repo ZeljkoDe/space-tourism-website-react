@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import Navigation from '../../components/navigation/Navigation';
-import Image from '../../components/image/Image';
-import DestinationNavigation from '../../components/destinationNavigation/DestinationNavigation';
-import Article from '../../components/article/Article';
+import { Navigation, Image, MiniNavigation, Article } from '../../components/index';
 import './crew.css';
 
 const crew = [
@@ -43,13 +40,10 @@ const Crew = () => {
 					<h3><span>02</span>Meet your crew</h3>
 				</header>
 				<div className="left__side">
-					{crew.map((planet, i) => {
-						if (planet.name === activeContent) {
-							return <Article key={i} planet={planet} />;
-						}
-					}
-					)}
-					<DestinationNavigation onActiveAdd={addActiveContent} obj={crew} arr='crew' />
+
+					{crew.map((planet, i) => (planet.name === activeContent && <Article key={i} planet={planet} />))}
+
+					<MiniNavigation onActiveAdd={addActiveContent} obj={crew} arr='crew' />
 				</div>
 				<div className="right__side">
 					<Image imgUrl={`/images/crew/image-${activeContent.replace(/\s+/g, '-').toLowerCase()}.png`} />

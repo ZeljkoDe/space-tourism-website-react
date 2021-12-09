@@ -1,11 +1,13 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 
-import Home from './containers/home/Home';
-import Destination from './containers/destination/Destination';
-import Crew from './containers/crew/Crew';
-import Technology from './containers/technlogy/Technology';
-// import Navigation from './components/navigation/Navigation';
+// import Home from './containers/home/Home';
+// import Destination from './containers/destination/Destination';
+// import Crew from './containers/crew/Crew';
+// import Technology from './containers/technology/Technology';
+
+import { Home, Destination, Crew, Technology } from './containers/index';
+
 const App = () => (
   <Routes>
     <Route exact path="/" element={<Home />} />
@@ -13,7 +15,6 @@ const App = () => (
     <Route exact path="/Crew" element={<Crew />} />
     <Route exact path="/Technology" element={<Technology />} />
     <Route path="*" element={<Home />} />
-
   </Routes>
 );
 

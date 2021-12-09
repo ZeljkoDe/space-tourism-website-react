@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import Navigation from '../../components/navigation/Navigation';
-import Image from '../../components/image/Image';
-import DestinationNavigation from '../../components/destinationNavigation/DestinationNavigation';
-import Article from '../../components/article/Article';
+import { Navigation, Image, MiniNavigation, Article } from '../../components/index';
 import './technology.css';
 
 const technology = [
@@ -35,13 +32,9 @@ const Technology = () => {
 					<h3><span>03</span>SPACE LAUNCH 101</h3>
 				</header>
 				<div className="left__side">
-					<DestinationNavigation onActiveAdd={addActiveContent} obj={technology} arr='technology' />
-					{technology.map((planet, i) => {
-						if (planet.name === activeContent) {
-							return <Article key={i} planet={planet} />;
-						}
-					}
-					)}
+					<MiniNavigation onActiveAdd={addActiveContent} obj={technology} arr='technology' />
+
+					{technology.map((planet, i) => (planet.name === activeContent && <Article key={i} planet={planet} />))}
 
 				</div>
 				<div className="right__side">

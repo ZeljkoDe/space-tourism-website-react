@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import Article from '../../components/article/Article';
-import DestinationNavigation from '../../components/destinationNavigation/DestinationNavigation';
-import Navigation from '../../components/navigation/Navigation';
-import Image from '../../components/image/Image';
+import { Navigation, Image, MiniNavigation, Article } from '../../components/index';
 import './destination.css';
 
 const destination = [
@@ -51,13 +48,10 @@ const Destination = () => {
 					<Image imgUrl={`/images/destination/image-${activeContent.toLowerCase()}.png`} />
 				</div>
 				<div className="right__side">
-					<DestinationNavigation onActiveAdd={addActiveContent} obj={destination} arr='destination' />
-					{destination.map((planet, i) => {
-						if (planet.name === activeContent) {
-							return <Article key={i} planet={planet} />;
-						}
-					}
-					)}
+					<MiniNavigation onActiveAdd={addActiveContent} obj={destination} arr='destination' />
+
+					{destination.map((planet, i) => (planet.name === activeContent && <Article key={i} planet={planet} />))}
+
 				</div>
 			</main>
 		</div>
