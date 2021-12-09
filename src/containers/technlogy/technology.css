@@ -1,0 +1,18 @@
+.technology__bg .left__side {
+  flex: 0 0 calc(60% - 80px);
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.technology__bg .left__side .article__title {
+  font-size: 56px;
+  text-transform: uppercase;
+  margin: 10px 0 30px;
+  font-weight: normal;
+}
+
+.technology__bg .article__subtitle {
+  display: block;
+  letter-spacing: 2.7px;
+}

@@ -1,0 +1,84 @@
+div[class*='destination'] .mini-navigation {
+  flex: 0 0 100%;
+}
+
+div[class*='destination'] .mini-navigation>* {
+  margin-right: 35px;
+}
+
+div[class*='destination'] .mini-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  color: #d0d6f9;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+div[class*='destination'] .mini-navigation li:hover {
+  border-color: gray;
+}
+
+div[class*='destination'] .mini-navigation li.active {
+  color: white;
+  border-color: white;
+}
+
+
+*/ div[class*='crew'] .mini-navigation {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+}
+
+div[class*='crew'] .mini-navigation li {
+  display: inline-block;
+  width: 14px;
+  aspect-ratio: 1;
+  background: rgba(128, 128, 128, 0.582);
+  border-radius: 50%;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+div[class*='crew'] .mini-navigation li:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+div[class*='crew'] .mini-navigation li.active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background: white;
+}
+
+div[class*='technology'] .mini-navigation {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 10%;
+  flex: 0 0 10%;
+  margin-right: 80px;
+}
+
+div[class*='technology'] .mini-navigation li {
+  font-size: 32px;
+  margin-bottom: 32px;
+  line-height: 80px;
+  text-align: center;
+  width: 80px;
+  aspect-ratio: 1;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+div[class*='technology'] .mini-navigation li:hover {
+  background: rgba(0, 0, 0, 0.329);
+}
+
+div[class*='technology'] .mini-navigation li.active {
+  background: white;
+  color: black;
+}

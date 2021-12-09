@@ -1,0 +1,31 @@
+.crew__bg main {
+  align-items: center;
+}
+
+.crew__bg .left__side {
+  flex: 0 0 calc(60% - 80px);
+  margin-left: 80px;
+  height: 100%;
+  transform: translate(0, 25%);
+}
+
+.crew__bg .right__side {
+  flex: 0 0 40%;
+}
+
+.crew__bg .right__side img {
+  width: 100%;
+}
+
+.crew__bg .left__side .article__title {
+  font-size: 56px;
+  text-transform: uppercase;
+  margin: 10px 0 30px;
+  font-weight: normal;
+}
+
+.crew__bg .article__role {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: gray;
+}

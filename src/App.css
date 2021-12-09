@@ -1,3 +1,91 @@
-div {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300&family=Bellefair&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 150px;
+  font-family: "Bellefair", serif;
+}
+
+h2 {
+  font-size: 100px;
+  font-family: "Bellefair", serif;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 4.72px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #d0d6f9;
+}
+
+p.description {
+  width: 55ch;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+header h3 {
+  margin-left: 80px;
+  margin-top: 80px;
+  color: white;
+}
+
+header span {
+  color: gray;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-small {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div[class*="__bg"] {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
 }

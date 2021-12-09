@@ -1,0 +1,17 @@
+.destination__bg .article__role {
+  display: none;
+}
+
+.destination__bg .article__description {
+  border-bottom: 1px solid gray;
+}
+
+
+
+.destination__bg .article__travel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
